@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		JS Timer
+	</title>
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body id="body" class="container">
+		<div id="wrapper">
+			<div id="main">
+				
+			</div>
+
+			<section id="sidebar" style="margin-top: -50px">
+				<section id="intro">
+					<header>
+						<h2>Add Note</h2>
+					</header>
+				</section>
+
+				<section>
+						<input type="text" name="query" placeholder="Title/Note Here" id="messageInput" /><br>
+						<h4>target date</h4>
+						<select id="daySelect" class="form-control"></select>
+						<select id="monthSelect" class="form-control"></select>
+						<select id="yearSelect" class="form-control"></select><br>
+						<h4>target time (optional)</h4>
+						<select id="hourSelect" class="form-control"></select>
+						<select id="minuteSelect" class="form-control"></select><br>
+
+						<ul class="actions" align="right">
+							<li><a class="button" onclick="createNote();">Add Note !</a></li>
+						</ul>
+						<hr>
+						<section id="footer">
+						<ul class="icons" align="right">
+							<li><p class="copyright">&copy; <a href="http://www.cihanselim.me" target="_blank">CHNSELIM</a>.</p></li>
+							<li><a href="https://www.github.com/chnselim" class="fa-github" target="_blank"><span class="label"></span></a></li>
+							<li><a href="https://www.twitter.com/chnselim" class="fa-twitter" target="_blank"><span class="label"></span></a></li>
+							<li><a href="https://www.linkedin.com/in/chnselim" class="fa-linkedin" target="_blank"><span class="label"></span></a></li>
+						</ul>
+						
+					</section>
+				</section>
+			</section>
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+		<script>
+			daySelect = document.getElementById('daySelect');
+			monthSelect = document.getElementById('monthSelect');
+			yearSelect = document.getElementById('yearSelect');
+			hourSelect = document.getElementById('hourSelect');
+			minuteSelect = document.getElementById('minuteSelect');
+
+			for (i=1;i<32;i++) {
+					daySelect.options[daySelect.options.length] = new Option(i, i);
+			}
+
+			var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
+			for (i in months) {
+				monthSelect.options[monthSelect.options.length] = new Option(months[i], months[i]);
+			}
+
+			for (i=2017;i<2500;i++) {
+				yearSelect.options[yearSelect.options.length] = new Option(i, i);
+			}
+
+			for (i=0;i<24;i++) {
+				if (i< 10)
+					hourSelect.options[hourSelect.options.length] = new Option("0" + i, "0" + i);
+				else
+					hourSelect.options[hourSelect.options.length] = new Option(i, i);
+			}
+
+			for (i=0;i<60;i++) {
+				if (i< 10)
+					minuteSelect.options[minuteSelect.options.length] = new Option("0" + i, "0" + i);
+				else
+					minuteSelect.options[minuteSelect.options.length] = new Option(i, i);
+			}
+		</script>
+</body>
+</html>
