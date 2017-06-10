@@ -25,15 +25,14 @@
 						<h4>note</h4>
 						<input type="text" name="query" placeholder="Title/Note Here" id="messageInput" /><br>
 						<h4>target date</h4>
-						<select id="daySelect" class="form-control"></select>
-						<select id="monthSelect" class="form-control"></select>
-						<select id="yearSelect" class="form-control"></select><br>
+						<select id="daySelect" class="form-control" style="width:33.3%;float:left;"></select>
+						<select id="monthSelect" class="form-control" style="width:33.3%;float:left;"></select>
+						<select id="yearSelect" class="form-control" style="width:33.3%;float:left;margin-bottom:30px"></select>
 						<h4>target time (optional)</h4>
-						<select id="hourSelect" class="form-control"></select>
-						<select id="minuteSelect" class="form-control"></select><br>
-
+						<select id="hourSelect" class="form-control" style="width:50%;float:left;"></select>
+						<select id="minuteSelect" class="form-control" style="width:50%;float:left;margin-bottom:30px"></select>
 						<ul class="actions" align="right">
-							<li><a class="button" onclick="createNote();">Add Note !</a></li>
+							<li><a class="button" onclick="createNote();">Add Note</a></li>
 						</ul>
 						<hr>
 						<section id="footer">
@@ -91,8 +90,18 @@
 			daySelect.value = now.getDate() + 1;
 			monthSelect.value = months[month];
 			yearSelect.value = now.getFullYear();
-			hourSelect.value = now.getHours();
-			minuteSelect.value = now.getMinutes();
+			if (now.getHours() < 10) {
+				hourSelect.value = "0" + now.getHours();
+			}
+			else {
+				hourSelect.value = now.getHours();
+			}
+			if (now.getMinutes() < 10) {
+				minuteSelect.value = "0" + now.getMinutes();
+			}
+			else {
+				minuteSelect.value = now.getMinutes();
+			}
 		</script>
 </body>
 </html>

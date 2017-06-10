@@ -42,7 +42,6 @@ function createNote() {
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
             
             titleH23.innerHTML = days + "days " + hours + ":" + minutes + ":" + seconds;
-            console.log(days)
             if (distance < 0) {
                 clearInterval(x);
                 var i = 0;
@@ -92,6 +91,7 @@ function createNote() {
     
         article.appendChild(ul)
         mainDiv.appendChild(article)
+
     }
 
 }
