@@ -52,7 +52,7 @@ Ext.define('StudentManagementSystem.view.studentLoginPage', {
                     width: 301,
                     labelAlign: 'right',
                     emptyText: 'Öğrenci Numarası',
-                    value: 5
+                    value: '5'
                 },
                 {
                     xtype: 'textfield',
@@ -65,7 +65,7 @@ Ext.define('StudentManagementSystem.view.studentLoginPage', {
                     labelAlign: 'right',
                     inputType: 'password',
                     emptyText: 'Parola',
-                    value: 5
+                    value: '5'
                 },
                 {
                     xtype: 'checkboxfield',
