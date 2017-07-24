@@ -1,24 +1,62 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'run', 'ionic:build' ]
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'package.json',
+1 verbose cli   '--save' ]
 2 info using npm@3.10.10
 3 info using node@v6.11.1
-4 verbose stack Error: missing script: ionic:build
-4 verbose stack     at run (/usr/lib/node_modules/npm/lib/run-script.js:151:19)
-4 verbose stack     at /usr/lib/node_modules/npm/lib/run-script.js:61:5
-4 verbose stack     at /usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:356:5
-4 verbose stack     at checkBinReferences_ (/usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:320:45)
-4 verbose stack     at final (/usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:354:3)
-4 verbose stack     at then (/usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:124:5)
-4 verbose stack     at /usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:243:12
-4 verbose stack     at /usr/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:78:16
-4 verbose stack     at tryToString (fs.js:456:3)
-4 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:443:12)
-5 verbose cwd /home/chnselim/Desktop/chnselim.github.io/kanban
-6 error Linux 4.4.0-47-generic
-7 error argv "/usr/bin/nodejs" "/usr/bin/npm" "run" "ionic:build"
-8 error node v6.11.1
-9 error npm  v3.10.10
-10 error missing script: ionic:build
-11 error If you need help, you may report this error at:
-11 error     <https://github.com/npm/npm/issues>
-12 verbose exit [ 1, true ]
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData package.json
+8 silly fetchOtherPackageData package.json
+9 silly cache add args [ 'package.json', null ]
+10 verbose cache add spec package.json
+11 silly cache add parsed spec Result {
+11 silly cache add   raw: 'package.json',
+11 silly cache add   scope: null,
+11 silly cache add   escapedName: 'package.json',
+11 silly cache add   name: null,
+11 silly cache add   rawSpec: 'package.json',
+11 silly cache add   spec: '/home/chnselim/Desktop/chnselim.github.io/kanban/package.json',
+11 silly cache add   type: 'local' }
+12 silly addLocalTarball shasum (computed) fc401873bcaf87d60f3b3e95940dd3666c482e60
+13 verbose addTmpTarball /home/chnselim/Desktop/chnselim.github.io/kanban/package.json not in flight; adding
+14 verbose correctMkdir /home/chnselim/.npm correctMkdir not in flight; initializing
+15 verbose addTmpTarball validating metadata from /home/chnselim/Desktop/chnselim.github.io/kanban/package.json
+16 verbose tar unpack /home/chnselim/Desktop/chnselim.github.io/kanban/package.json
+17 verbose tar unpacking to /tmp/npm-21468-ba9b64d3/unpack-7d66e9c2
+18 silly gentlyRm /tmp/npm-21468-ba9b64d3/unpack-7d66e9c2 is being purged
+19 verbose gentlyRm don't care about contents; nuking /tmp/npm-21468-ba9b64d3/unpack-7d66e9c2
+20 silly gunzTarPerm modes [ '755', '644' ]
+21 error not a package /home/chnselim/Desktop/chnselim.github.io/kanban/package.json
+22 error addLocal Could not install /home/chnselim/Desktop/chnselim.github.io/kanban/package.json
+23 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open '/tmp/npm-21468-ba9b64d3/unpack-7d66e9c2/package.json'
+23 silly fetchPackageMetaData     at Error (native)
+23 silly fetchPackageMetaData  error for package.json { Error: ENOENT: no such file or directory, open '/tmp/npm-21468-ba9b64d3/unpack-7d66e9c2/package.json'
+23 silly fetchPackageMetaData     at Error (native)
+23 silly fetchPackageMetaData   errno: -2,
+23 silly fetchPackageMetaData   code: 'ENOENT',
+23 silly fetchPackageMetaData   syscall: 'open',
+23 silly fetchPackageMetaData   path: '/tmp/npm-21468-ba9b64d3/unpack-7d66e9c2/package.json' }
+24 silly rollbackFailedOptional Starting
+25 silly rollbackFailedOptional Finishing
+26 silly runTopLevelLifecycles Finishing
+27 silly install printInstalled
+28 verbose stack Error: ENOENT: no such file or directory, open '/tmp/npm-21468-ba9b64d3/unpack-7d66e9c2/package.json'
+28 verbose stack     at Error (native)
+29 verbose cwd /home/chnselim/Desktop/chnselim.github.io/kanban
+30 error Linux 4.4.0-47-generic
+31 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "package.json" "--save"
+32 error node v6.11.1
+33 error npm  v3.10.10
+34 error path /tmp/npm-21468-ba9b64d3/unpack-7d66e9c2/package.json
+35 error code ENOENT
+36 error errno -2
+37 error syscall open
+38 error enoent ENOENT: no such file or directory, open '/tmp/npm-21468-ba9b64d3/unpack-7d66e9c2/package.json'
+39 error enoent ENOENT: no such file or directory, open '/tmp/npm-21468-ba9b64d3/unpack-7d66e9c2/package.json'
+39 error enoent This is most likely not a problem with npm itself
+39 error enoent and is related to npm not being able to find a file.
+40 verbose exit [ -2, true ]
