@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Bellefair');
+
+.body {
+    background-color: #4A148C;
+}
+
+header {
+    color: white;
+    font-size: 40px;
+    margin: 100px 0 50px 0;
+    font-family: 'Bellefair', serif;
+}
+
+footer {
+    color: white;
+    font-size: 40px;
+    margin: 50px 0 0 0;
+    font-family: 'Bellefair', serif;
+    text-align: right;
+}
+
+.name {
+    color: #00E676;
+}
+
+.demos {
+    color: orangered;
+}
+
+.repos {
+    color: yellow;
+}
+
+.creative {
+    color: #00E676;
+}
+
+.interesting {
+    color: orangered;
+}
+
+.website {
+    color: #FFEB3B;
+}
+
+.website:hover {
+    background-color: #FFEB3B;
+    color: black;
+    cursor: pointer;
+}
+
+.front {
+    color: #FF4081;
+}
+
+.msku {
+    color: orangered;
+}
+
+p {
+    font-size: 30px;
+    font-family: 'Bellefair', serif;
+    text-align: center;
+    color: black;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid black;
+    background-color: #FFF176
+}
+
+p:hover {
+    color: black;
+    background-color: #FFEB3B;
+}
