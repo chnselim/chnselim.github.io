@@ -19,8 +19,18 @@ footer {
     text-align: right;
 }
 
+a {
+  text-decoration: none !important; 
+}
+
 .name {
     color: #00E676;
+}
+
+.name:hover {
+    unicode-bidi:bidi-override;
+    direction:rtl;
+    color: orangered;
 }
 
 .demos {
@@ -49,12 +59,18 @@ footer {
     cursor: pointer;
 }
 
-.front {
+.contact {
     color: #FF4081;
 }
 
+.contact:hover {
+    background-color: #FF4081;
+    color: black;
+    cursor: pointer;
+}
+
 .msku {
-    color: orangered;
+    color: #03A9F4;
 }
 
 p {
@@ -70,4 +86,16 @@ p {
 p:hover {
     color: black;
     background-color: #FFEB3B;
+}
+
+.icons {
+    font-size: 17px;
+    text-align: center;
+    color: black;
+    border: 1px solid black;
+    background-color: #FFF176;
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin: 50px 5px 10px 5px;
 }
