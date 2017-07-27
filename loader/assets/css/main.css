@@ -1,6 +1,6 @@
 /* Main */
 
-    @import url('https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Reenie+Beanie');
+    @import url('https://fonts.googleapis.com/css?family=Bellefair');
 
     body {
         text-align: center;
@@ -8,7 +8,7 @@
     }
 
     h2 {
-        font-family: 'Annie Use Your Telescope', cursive;
+        font-family: 'Bellefair', serif;
 
         font-size: 1.5em;
         font-weight: 800;
