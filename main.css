@@ -19,6 +19,10 @@ footer {
     text-align: right;
 }
 
+a {
+  text-decoration: none !important; 
+}
+
 .name {
     color: #00E676;
 }
@@ -49,12 +53,18 @@ footer {
     cursor: pointer;
 }
 
-.front {
+.contact {
     color: #FF4081;
 }
 
+.contact:hover {
+    background-color: #FF4081;
+    color: black;
+    cursor: pointer;
+}
+
 .msku {
-    color: orangered;
+    color: #03A9F4;
 }
 
 p {
